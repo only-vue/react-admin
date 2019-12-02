@@ -1,0 +1,39 @@
+.formBody{
+	margin: 30px;
+	.single{
+		.ant-form-item-label,.ant-form-item-control-wrapper{
+			float: left;
+		}
+		.ant-form-item-label{
+			width: 100px;
+		}
+		.ant-form-item-control-wrapper{
+			width: calc(100% - 100px);
+			.ant-select{
+				width: 60%!important;
+			}
+			.ant-input,.ant-input-number,.ant-calendar-picker{
+				width: 60%;
+			}
+		}
+	}
+	.ant-calendar-picker-input{
+		width: 100%!important;
+	}
+    
+    .form-btns{
+       height: 40px;
+			 margin: 17px 0 17px 10px;
+			 width: 60%;
+			 text-align: center;
+       .ant-btn{
+           margin: 0 15px 0 0;
+       }
+       .ant-btn-danger{
+           background:#f5222d;
+           border: solid 1px #f5222d;
+           color: #fff;
+       }
+    }
+   
+}

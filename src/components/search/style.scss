@@ -1,0 +1,27 @@
+.searchBody{
+    .ant-form{
+        display: flex;
+        flex-flow: row wrap;
+        .ant-form-item{
+            display: flex;
+            margin: 15px 10px 15px 0;
+        }
+        .ant-input-affix-wrapper{
+            min-width: 350px;
+            height: 33px;
+        }
+    } 
+    .search-btns{
+       height: 40px;
+       margin: 17px 0 17px 10px;
+       .ant-btn{
+           margin: 0 15px 0 0;
+       }
+       .ant-btn-danger{
+           background:#f5222d;
+           border: solid 1px #f5222d;
+           color: #fff;
+       }
+    }
+   
+}

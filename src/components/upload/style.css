@@ -1,0 +1,52 @@
+.ant-upload-list-picture .ant-upload-list-item, .ant-upload-list-picture-card .ant-upload-list-item {
+  width: 100px;
+  float: left;
+  margin: 10px 10px 0 0 !important;
+}
+
+.ant-upload-list-item {
+  height: auto !important;
+}
+
+.ant-upload-list-picture .ant-upload-list-item-thumbnail, .ant-upload-list-picture-card .ant-upload-list-item-thumbnail {
+  position: relative !important;
+  display: inline-block;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.ant-upload-list-picture .ant-upload-list-item-thumbnail img, .ant-upload-list-picture-card .ant-upload-list-item-thumbnail img {
+  margin: 10px auto;
+}
+
+.ant-upload-list-picture .ant-upload-list-item-name, .ant-upload-list-picture-card .ant-upload-list-item-name {
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 0;
+  line-height: 20px !important;
+  text-align: center;
+}
+
+.ant-upload-list-item-thumbnail svg {
+  width: 48px;
+  height: 48px;
+  margin: 4px 0 0;
+}
+
+.ant-upload-list-item-progress {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.ant-progress {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
