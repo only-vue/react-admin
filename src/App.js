@@ -34,7 +34,6 @@ export default class App extends React.Component {
 		return (
 			<LocaleProvider locale={zhCN}>
 				<Layout>
-
 					<Layout className="at-header">
 						<Header toggle={this.toggle} collapsed={this.state.collapsed} />
 					</Layout>
@@ -44,7 +43,6 @@ export default class App extends React.Component {
 								<MenuTree collapsed={this.state.collapsed} location={this.props} />
 							</Sider>
 						}
-
 						<Content className="at-main">
 							<BreadcrumbCustom />
 							<Main />

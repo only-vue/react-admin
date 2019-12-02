@@ -21,7 +21,7 @@ export default class Add extends React.Component {
 		return (
 			<div>
 				 <From
-						types="single"
+						types="one-rows" //控制展示 one-rows单行 tow-rows双行 three-rows三行
 						wrappedComponentRef={(form) => this.formRef = form}
 				    formData={
 							[

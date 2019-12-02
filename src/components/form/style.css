@@ -2,23 +2,26 @@
   margin: 30px;
 }
 
-.formBody .single .ant-form-item-label, .formBody .single .ant-form-item-control-wrapper {
+.formBody .ant-form-item-label,
+.formBody .ant-form-item-control-wrapper {
   float: left;
 }
 
-.formBody .single .ant-form-item-label {
+.formBody .ant-form-item-label {
   width: 100px;
 }
 
-.formBody .single .ant-form-item-control-wrapper {
+.formBody .ant-form-item-control-wrapper {
   width: calc(100% - 100px);
 }
 
-.formBody .single .ant-form-item-control-wrapper .ant-select {
+.formBody .ant-form-item-control-wrapper .ant-select {
   width: 60% !important;
 }
 
-.formBody .single .ant-form-item-control-wrapper .ant-input, .formBody .single .ant-form-item-control-wrapper .ant-input-number, .formBody .single .ant-form-item-control-wrapper .ant-calendar-picker {
+.formBody .ant-form-item-control-wrapper .ant-input,
+.formBody .ant-form-item-control-wrapper .ant-input-number,
+.formBody .ant-form-item-control-wrapper .ant-calendar-picker {
   width: 60%;
 }
 
@@ -41,4 +44,22 @@
   background: #f5222d;
   border: solid 1px #f5222d;
   color: #fff;
+}
+
+.formBody .tow-rows .ant-form-item {
+  width: 50%;
+  float: left;
+}
+
+.formBody .tow-rows .form-btns {
+  width: 100%;
+}
+
+.formBody .three-rows .ant-form-item {
+  width: calc(100% / 3);
+  float: left;
+}
+
+.formBody .three-rows .form-btns {
+  width: 100%;
 }
