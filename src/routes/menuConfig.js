@@ -26,6 +26,12 @@ const menuList = [
 			},
 			{
 				id: '1-2',
+				title: '详情页',
+				path: '/app/detail',
+				component: 'Detail'
+			},
+			{
+				id: '1-3',
 				title: '文本编辑器',
 				path: '/app/braftEditor',
 				component: 'BraftEditor'

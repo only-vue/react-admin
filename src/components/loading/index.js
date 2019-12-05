@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Spin } from 'antd';
-import './style.css';
+import './style.scss';
 
 
 export default class LoadingSpin extends Component {
