@@ -66,7 +66,7 @@ export default class Details extends React.Component {
 
 	//表单返回
   callbackForm(){
-    this.props.history.push('/app/table')
+    //this.props.history.push('/app/table')
 	}
 	
 }
