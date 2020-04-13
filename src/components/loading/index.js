@@ -5,8 +5,7 @@ import './style.scss';
 
 
 export default class LoadingSpin extends Component {
-	
-  
+
 	static show(data = '加载中...') {
 		this.loading = document.createElement('div')
 		this.loading.className = "loading";
