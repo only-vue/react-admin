@@ -33,8 +33,8 @@ class Forms extends Component {
 								>
 									{
 										item.type === 'input' &&
-										getFieldDecorator(item.title, {
-											initialValue: item.key,
+										getFieldDecorator(item.key, {
+											initialValue: item.value,
 											rules: item.rules ? item.rules : [],
 										})(
 											<Input
@@ -49,8 +49,8 @@ class Forms extends Component {
 									}
 									{
 										(item.type === 'select') &&
-										getFieldDecorator(item.title, {
-											initialValue: item.key && item.key,
+										getFieldDecorator(item.key, {
+											initialValue: item.value && item.value,
 											rules: item.rules ? item.rules : []
 										})(
 											<Select
@@ -73,12 +73,12 @@ class Forms extends Component {
 									}
 									{
 										(item.type === 'radio') &&
-										getFieldDecorator(item.title, {
-											initialValue: item.key && item.key,
+										getFieldDecorator(item.key, {
+											initialValue: item.value && item.value,
 											rules: item.rules ? item.rules : []
 										})(
 											<Radio
-												initValue={item.key}
+												initValue={item.value}
 												Options={item.Options}
 												onChange={item.onChange}
 											/>
@@ -88,12 +88,12 @@ class Forms extends Component {
 
 									{
 										(item.type === 'Checkbox') &&
-										getFieldDecorator(item.title, {
-											initialValue: item.key && item.key,
+										getFieldDecorator(item.key, {
+											initialValue: item.value && item.value,
 											rules: item.rules ? item.rules : []
 										})(
 											<CheckBox
-												initValue={item.key}
+												initValue={item.value}
 												Options={item.Options}
 												onChange={item.onChange}
 											/>
@@ -104,8 +104,8 @@ class Forms extends Component {
 
 									{
 										(item.type === 'inputNumber') &&
-										getFieldDecorator(item.title, {
-											initialValue: item.key && item.key,
+										getFieldDecorator(item.key, {
+											initialValue: item.value && item.value,
 											rules: item.rules ? item.rules : []
 										})(
 											<InputNumber
@@ -120,8 +120,8 @@ class Forms extends Component {
 
 									{
 										(item.type === 'datePicker') &&
-										getFieldDecorator(item.title, {
-											initialValue: item.key && item.key,
+										getFieldDecorator(item.key, {
+											initialValue: item.value && item.value,
 											rules: item.rules ? item.rules : []
 										})(
 											<DatePicker
@@ -132,10 +132,10 @@ class Forms extends Component {
 
 									}
 
-{
+									{
 										(item.type === 'rangePicker') &&
-										getFieldDecorator(item.title, {
-											initialValue: item.key && item.key,
+										getFieldDecorator(item.key, {
+											initialValue: item.value && item.value,
 											rules: item.rules ? item.rules : []
 										})(
 											<RangePicker
@@ -149,16 +149,17 @@ class Forms extends Component {
 
 									}
 
-{
+									{
 										(item.type === 'upload') &&
-										getFieldDecorator(item.title, {
-											initialValue: item.key && item.key,
+										getFieldDecorator(item.key, {
+											initialValue: item.value && item.value,
 											rules: item.rules ? item.rules : []
 										})(
 											<UpLoad
-											 accept={item.accept&&item.accept}
-                       multiple={item.multiple&&item.multiple}
-											 />
+												accept={item.accept && item.accept}
+												onChange={item.onChange && item.onChange}
+												multiple={item.multiple && item.multiple}
+											/>
 
 										)
 
