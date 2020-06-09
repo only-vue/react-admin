@@ -3,11 +3,11 @@ const menuList = [
 	{
 
 		id: '1',
-		key:'menu1',
+		key: 'menu1',
 		icon: 'exception',
 		title: '菜单一',
 		path: 'table',
-		routerPath:'/app/table',
+		routerPath: '/app/table',
 		isChildren: true,
 		children: [
 			{
@@ -15,7 +15,7 @@ const menuList = [
 				title: '列表',
 				path: '/app/table',
 				component: 'Table',
-				children:[
+				children: [
 					{
 						id: '1-1-1',
 						title: '新增',
@@ -41,11 +41,11 @@ const menuList = [
 	{
 
 		id: '2',
-		key:'menu2',
+		key: 'menu2',
 		icon: 'exception',
 		title: '菜单二',
 		path: 'demo3',
-		routerPath:'/app/demo3',
+		routerPath: '/app/demo3',
 		isChildren: true,
 		children: [
 			{

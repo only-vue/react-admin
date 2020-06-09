@@ -1,5 +1,4 @@
 import React from 'react';
-import Loading from '../../components/loading';
 import { Form, Icon, Input, Button } from 'antd';
 import { storage } from '../../utils/util.js';
 import './style.scss';

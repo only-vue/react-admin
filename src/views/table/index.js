@@ -1,8 +1,8 @@
 import React from 'react';
 import Search from "../../components/search";
 import Table from '../../components/table';
-import { modalConfirm,getDate,keyData } from '../../utils/util.js';
-// import * as Request from "../../service/dataMange";
+import { modalConfirm, getDate } from '../../utils/util.js';
+import * as Request from "../../service/test.js";
 import { Icon } from "antd";
 
 
@@ -27,12 +27,16 @@ export default class List extends React.Component {
 	}
 
 	componentDidMount() {
-		this.getInitData();
+		//this.getInitData();
+
 	}
 	//初始化数据
 	getInitData = async () => {
-	
-	
+		Request.getList({ email: "999@78dk.com", password: "123456" }).then(
+			response => {
+				console.log(response, 111)
+			}
+		);
 	}
 	render() {
 		return (
@@ -46,7 +50,7 @@ export default class List extends React.Component {
 									title: '账号',
 									type: 'input',
 									isTitle: false,
-									maxLength:11,
+									maxLength: 11,
 									onChange: this.onChangeSearch.bind(this, 'account'),
 									placeholder: '请输入账号'
 								}
@@ -75,7 +79,7 @@ export default class List extends React.Component {
 									title: '创建时间',
 									dataIndex: 'created',
 									render: (text, record) =>
-									<div>{getDate(record.created)}</div>
+										<div>{getDate(record.created)}</div>
 								},
 								{
 									title: '账号',
@@ -119,7 +123,7 @@ export default class List extends React.Component {
 	editClick = async (record) => {
 		this.props.history.push({
 			pathname: '/app/alarmTrendAdd',
-			state:{
+			state: {
 				isEdit: true,
 				userId: record.userId,
 				userName: record.userName
@@ -129,16 +133,7 @@ export default class List extends React.Component {
 
 	//删除
 	delClick = async (value) => {
-		modalConfirm(	`你确认删除${value.userName}账号的自定义报警趋势数据吗？`, () => {
-			let params = {
-				userId: value.userId
-			}
-			Request.deleteWarnTrend(params).then(
-				response => {
-					this.getInitData();
-				}
-			);
-
+		modalConfirm(`你确认删除${value.userName}账号的自定义报警趋势数据吗？`, () => {
 
 		})
 	}

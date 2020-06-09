@@ -1,7 +1,6 @@
 import React from 'react';
 import From from '../../components/form';
 import { checkNull } from '../../utils/rule';
-import moment from 'moment';
 export default class Add extends React.Component {
 	constructor(props) {
 		super(props);
