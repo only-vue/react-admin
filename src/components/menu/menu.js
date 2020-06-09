@@ -11,7 +11,7 @@ export default class MenuTree extends React.Component {
 		this.state = {
 			openKeys: ['1'], //初始化选中
 			rootSubmenuKeys: [],//一级菜单key值
-			menuList:[], //菜单列表
+			menuList: [], //菜单列表
 			selectedKeys: ['1'] //每次选中值
 		}
 	}
@@ -26,7 +26,7 @@ export default class MenuTree extends React.Component {
 			}
 			this.state.rootSubmenuKeys.push(item.id);
 		})
-		this.setState({menuList});
+		this.setState({ menuList });
 		this.handleSetSelectedKeys(this.props.location.location.pathname);
 	}
 	render() {

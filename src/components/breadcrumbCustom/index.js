@@ -16,7 +16,7 @@ class BreadcrumbCustom extends React.Component {
 	static propTypes = {
 		location: PropTypes.object.isRequired
 	};
-  //处理当前路径获取到一套完整的导航数组
+	//处理当前路径获取到一套完整的导航数组
 	getBreadList(pathname) {
 		let pathSnippets = pathname.split('/').filter(i => i);
 		let list = [];
