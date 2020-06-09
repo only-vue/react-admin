@@ -41,7 +41,7 @@ axios.interceptors.response.use(function (res) {
 	}
 	return response.data;
 
-}, function (error) {
+}, (error) => {
 	if (error.message.includes('timeout')) {
 		modalInfo('提示', '网络请求超时，请稍候再试');
 	} else {
